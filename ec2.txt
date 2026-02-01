@@ -1,0 +1,37 @@
+Instance Overview:
+
+Name: EVOTABVPNTest
+Instance Type: c7gn.large
+State: Running
+Location: us-east-1a availability zone
+Network Information:
+
+Public IP: 184.72.231.138
+Public DNS: ec2-184-72-231-138.compute-1.amazonaws.com
+Private IP: 10.93.83.243
+Private DNS: ip-10-93-83-243.ec2.internal
+VPC ID: vpc-00deccb411da52653
+Subnet ID: subnet-069e0fb5513593c3a
+Security Group: "Fortinet FortiGate OFT VPN Test"
+Network Interfaces: The instance has 2 network interfaces:
+
+Primary interface with 2 private IPs (10.93.83.243, 10.93.83.161)
+Secondary interface named "Officer_VPN_Test_second_interface" with IP 10.93.65.185
+Storage Configuration:
+
+Root Volume: 2 GB gp3 EBS volume (/dev/sda1)
+Additional Volume: 30 GB gp3 EBS volume (/dev/sdb)
+Both volumes are encrypted using KMS
+Additional Configuration:
+
+IAM Role: AmazonSSMRoleForInstancesQuickSetup
+Key Pair: Fortigate_OFT_Test
+CPU: 2 cores, 1 thread per core
+CPU Credits: Unlimited
+EBS-Optimized: Enabled
+Monitoring: Disabled
+Termination Protection: Disabled
+Tags:
+
+Name: EVOTABVPNTest
+Unity: Unity
