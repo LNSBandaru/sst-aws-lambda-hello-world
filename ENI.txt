@@ -1,0 +1,44 @@
+Here are the detailed descriptions of both ENIs (Elastic Network Interfaces) attached to EC2 instance i-0d3a650f131c3bec4:
+
+Primary Network Interface (eth0)
+Interface ID: eni-01d1dea59c6f808da
+Device Index: 0
+Description: No description set
+Status: in-use
+Subnet: subnet-069e0fb5513593c3a
+VPC: vpc-00deccb411da52653
+Delete on Termination: Yes
+IP Configuration:
+
+Primary Private IP: 10.93.83.243 (associated with public IP 184.72.231.138)
+Secondary Private IP: 10.93.83.161 (associated with public IP 23.20.246.165)
+Security Group:
+
+"Fortinet FortiGate OFT VPN Test" (sg-0e3e79b4b04e653ff)
+Tags:
+
+Name: OFTVPNeth0
+Unity: Unity
+Secondary Network Interface (eth1)
+Interface ID: eni-0aa9f272b5984cf34
+Device Index: 1
+Description: Officer_VPN_Test_second_interface
+Status: in-use
+Subnet: subnet-0048ae5bdb6e35dd0 (private subnet)
+VPC: vpc-00deccb411da52653
+Delete on Termination: No
+IP Configuration:
+
+Private IP: 10.93.65.185 (no public IP associated)
+Security Group:
+
+"Officer_Tablet_VPN_second_interface_for_gate" (sg-0c6c75fcc7e21b414)
+Tags:
+
+Name: Officer_VPN_Test_second_interface
+Unity: Unity
+Key Differences:
+The primary interface has both public and private IPs, while the secondary interface only has a private IP
+The secondary interface is in a private subnet and won't be deleted when the instance terminates
+Each interface has different security groups configured for their specific purposes
+The primary interface supports multiple IP addresses (primary + secondary), while the secondary has a single IP
